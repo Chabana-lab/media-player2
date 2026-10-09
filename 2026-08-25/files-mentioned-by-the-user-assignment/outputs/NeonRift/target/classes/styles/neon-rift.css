@@ -1,0 +1,34 @@
+.app-root { -fx-font-family: "Segoe UI", "Arial"; -fx-background-color: #050817; }
+.backdrop { -fx-background-color: radial-gradient(center 50% 35%, radius 75%, #15254f 0%, #0c1230 42%, #050817 100%); }
+.backdrop:before { -fx-opacity: .3; }
+.menu, .page, .completion, .pause-overlay { -fx-padding: 38; -fx-background-color: rgba(10, 16, 43, .78); -fx-background-radius: 28; -fx-border-color: rgba(102, 223, 255, .22); -fx-border-radius: 28; -fx-effect: dropshadow(gaussian, rgba(0,0,0,.55), 28, .2, 0, 12); }
+.menu { -fx-background-color: transparent; -fx-border-color: transparent; -fx-effect: null; }
+.game-title { -fx-font-size: 72px; -fx-font-weight: 800; -fx-fill: linear-gradient(to bottom, #ffffff, #83eaff); -fx-effect: dropshadow(gaussian, #2fa8ff, 18, .5, 0, 0); }
+.eyebrow { -fx-font-size: 11px; -fx-font-weight: bold; -fx-fill: #77dff9; -fx-letter-spacing: 1.5px; }
+.subtitle { -fx-font-size: 15px; -fx-fill: #a9b7d4; }
+.action-button { -fx-min-height: 48; -fx-padding: 0 22; -fx-background-color: linear-gradient(to right, #176ee8, #6a3fdb); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 13px; -fx-background-radius: 14; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(31,130,255,.35), 14, .25, 0, 5); }
+.action-button:hover { -fx-scale-x: 1.035; -fx-scale-y: 1.035; -fx-background-color: linear-gradient(to right, #2197f3, #8a51f0); }
+.action-button:pressed { -fx-scale-x: .98; -fx-scale-y: .98; }
+.quiet-button, .back-button { -fx-background-color: transparent; -fx-border-color: rgba(159,190,230,.45); -fx-border-radius: 14; -fx-text-fill: #c8d7ef; -fx-effect: null; }
+.page { -fx-background-color: rgba(9, 15, 42, .9); }
+.page-title, .completion-title { -fx-font-size: 32px; -fx-font-weight: bold; -fx-fill: #f6fbff; }
+.card-grid { -fx-max-width: 840; }
+.info-card, .settings-card { -fx-padding: 22; -fx-background-color: rgba(25, 39, 82, .72); -fx-background-radius: 18; -fx-border-color: rgba(135, 227, 255, .16); -fx-border-radius: 18; }
+.info-card { -fx-pref-width: 390; -fx-min-height: 175; }
+.card-icon { -fx-font-size: 25px; -fx-fill: #66e5ff; }
+.card-title, .setting-label { -fx-font-size: 13px; -fx-font-weight: bold; -fx-fill: #f2f7ff; }
+.card-copy { -fx-font-size: 13px; -fx-fill: #b8c7e1; }
+.settings-card { -fx-min-width: 330; -fx-max-width: 560; }
+.toggle { -fx-text-fill: #edf5ff; -fx-font-size: 15px; }
+.toggle .box { -fx-background-color: #24335d; -fx-background-radius: 14; -fx-padding: 5; }
+.toggle:selected .mark { -fx-background-color: #66e5ff; }.toggle:selected .box { -fx-background-color: #256fdc; }
+.slider .track { -fx-background-color: #283a70; -fx-background-radius: 5; }.slider .thumb { -fx-background-color: #66e5ff; }
+.combo-box { -fx-background-color: #172752; -fx-background-radius: 10; }.combo-box .list-cell { -fx-text-fill: white; -fx-background-color: #172752; }
+.hud { -fx-padding: 14 18; -fx-background-color: rgba(14, 25, 59, .92); -fx-background-radius: 16; -fx-border-color: rgba(103, 225, 255, .18); -fx-border-radius: 16; }
+.hud-stat { -fx-text-fill: #eaf6ff; -fx-font-size: 13px; -fx-font-weight: bold; }.hud-stat { -fx-label-padding: 0 18 0 0; }
+.small-button { -fx-min-height: 36; -fx-font-size: 11px; -fx-background-radius: 10; }
+.arena { -fx-background-color: linear-gradient(to bottom, #0b1640, #070b20); -fx-background-radius: 20; -fx-border-color: rgba(91, 228, 255, .26); -fx-border-radius: 20; }
+.ship { -fx-fill: #6fe8ff; -fx-effect: dropshadow(gaussian, #167efa, 30, .9, 0, 0); }.shard { -fx-effect: dropshadow(gaussian, #63eaff, 16, .8, 0, 0); }.hazard { -fx-effect: dropshadow(gaussian, #ff3c95, 18, .75, 0, 0); }
+.arena-title { -fx-font-size: 22px; -fx-font-weight: bold; -fx-fill: rgba(199,243,255,.78); }.hint { -fx-font-size: 12px; -fx-fill: #92a9cf; }
+.completion { -fx-background-color: rgba(13, 21, 54, .95); }.completion-icon { -fx-font-size: 52px; -fx-fill: #ffe28a; -fx-effect: dropshadow(gaussian, #ffbf3f, 22, .6, 0, 0); }.final-score { -fx-font-size: 50px; -fx-font-weight: bold; -fx-fill: #70ebff; }.pause-overlay { -fx-max-width: 360; }
+@media (max-width: 650px) { .game-title { -fx-font-size: 52px; } .page { -fx-padding: 20; } .info-card { -fx-pref-width: 300; } .hud { -fx-padding: 9; } .hud-stat { -fx-font-size: 10px; } }
